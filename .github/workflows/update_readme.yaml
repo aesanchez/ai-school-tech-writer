@@ -36,7 +36,7 @@ jobs:
           echo "pull_request_number=$pr_num" >> $GITHUB_ENV
           echo "commit_sha=$commit_sha" >> $GITHUB_ENV
 
-# Run the Python script
+      # Run the Python script
       - name: Generate Updated README
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
